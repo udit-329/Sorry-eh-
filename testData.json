@@ -1,5 +1,5 @@
 {   
-    "Family": {
+    "family": {
         "parents": ["sen1", "sen 2", "sen 3"],
         "siblings": ["sen1", "sen 2", "sen 3"]
     },
