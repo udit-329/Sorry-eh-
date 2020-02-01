@@ -1,16 +1,21 @@
-{
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "hobbies": ["running", "sky diving", "singing"],
-    "age": 35,
-    "children": [
-        {
-            "firstName": "Alice",
-            "age": 6
-        },
-        {
-            "firstName": "Bob",
-            "age": 8
-        }
-    ]
+{   
+    "Family": {
+        "parents": ["sen1", "sen 2", "sen 3"],
+        "siblings": ["sen1", "sen 2", "sen 3"]
+    },
+    
+    "SO": {
+        "gf/w": ["sen1", "sen 2", "sen 3"],
+        "bf/h": ["sen1", "sen 2", "sen 3"]
+    },
+
+    "friend": {
+        "close": ["sen1", "sen 2", "sen 3"],
+        "distant": ["sen1", "sen 2", "sen 3"]
+    },
+
+    "professional": {
+        "team": ["sen1", "sen 2", "sen 3"],
+        "customer": ["sen1", "sen 2", "sen 3"]
+    }
 }
