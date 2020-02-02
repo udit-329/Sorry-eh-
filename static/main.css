@@ -1,0 +1,172 @@
+body{
+	background-color:#f4f4f4;
+	color:#555;
+	font-family:Arial, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+button{
+    border:1px solid black;
+    border-radius:5px;
+}
+
+button:hover{
+	color:red;
+}
+
+button:active{
+	color:green;
+}
+
+input{
+    width:500px;
+    padding:10px;
+    border:1px solid black;
+    border-radius:5px;
+}
+
+textarea{
+    width:500px;
+    padding:10px;
+    border:1px solid black;
+    border-radius:5px;
+}
+
+label{
+    padding:5px;
+}
+
+form{
+    text-align:center;
+    padding:10px;
+}
+
+.container{
+	width:70%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.container-2{
+    display:flex;
+    justify-content:center;
+}
+
+.container-3{
+    display:flex;
+    justify-content:center;
+}
+
+.container-2 div, .container-3 div{
+    padding:10px;
+}
+
+.container-4, .container-5{
+    display:none;
+    height:auto;
+    width:auto;
+}
+
+.container-buttons{
+    display:flex;
+    justify-content:center;
+}
+
+#main-header{
+    text-align:center;
+	background-color:greenyellow;
+    color:#fff;
+    border-bottom:3px solid green;
+}
+
+#header-2{
+    text-align:center;
+    margin-bottom:30px;
+}
+/*
+#main{
+    text-align:center;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+*/
+/*
+.container-2-box-1{
+}
+.container-2-box-2{
+}
+*/
+.button{
+    font-size:20px;
+    text-align:center;
+    background-color:#333;
+	color:#fff;
+	padding:10px 15px;
+    border:none;
+}
+
+#div-3-1{
+    display:none;
+}
+#div-3-2{
+    display:none;
+}
+#div-3-3{
+    display:none;
+}
+#div-3-4{
+    display:none;
+}
+#div-3-5{
+    display:none;
+}
+#div-3-6{
+    display:none;
+}
+#div-3-7{
+    display:none;
+}
+#div-3-8{
+    display:none;
+}
+
+/* apology.html */
+.container-buttons{
+    display:flex;
+    justify-content:center;
+}
+.container-buttons div{
+    margin:0px 10px
+}
+.button-2{
+    padding:10px 20px;
+    margin:0px 20px
+}
+.apology{
+    display:inline-block;
+    font-size:20px;
+    width:70%
+}
+.container-str{
+    text-align:center;
+}
+#apology-text{
+    border:2px solid greenyellow;
+    border-radius: 5px;
+    padding:15px 0px;
+    display:block;
+}
+#percent{
+    font-size:40px;
+    display:inline-block;
+}
+#header-3{
+    text-align:center;
+    margin-bottom:30px;
+}
+.container-feedback{
+    display:flex;
+    justify-content:center;
+}

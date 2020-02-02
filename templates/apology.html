@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyApologies</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <script>
+        var apologies_prio = ['{{ apgy_param_1 }}', '{{ apgy_param_2 }}', '{{ apgy_param_3 }}'];
+        var apologies_perc = ['{{ apgy_param_4 }}', '{{ apgy_param_5 }}', '{{ apgy_param_6 }}'];
+    </script>
+    <!--<script>-->
+        <!--alert(apologies_prio[0] + " " + apologies_perc[0]);-->
+    <!--</script>-->
+    <header id=main-header>
+        <div class="container">
+            <h1>MyApologies</h1>
+        </div>
+    </header>
+    <body onload="displayApology(apologies_prio[0], apologies_perc[0])">
+        <h2 id="header-2">Your Personalized Apology</h2>
+
+        <div class="container-buttons">
+            <div id="div-apology-1">
+                <button class="button" onclick="displayApology(apologies_prio[0], apologies_perc[0])">Apology #1</button>
+            </div>
+            <div id="div-apology-2">
+                <button class="button" onclick="displayApology(apologies_prio[1], apologies_perc[1])">Apology #2</button>
+            </div>
+            <div id="div-apology-3">
+                <button class="button" onclick="displayApology(apologies_prio[2], apologies_perc[2])">Apology #3</button>
+            </div>
+        </div>
+
+        <div class="container-str">
+            <div class="apology">
+                <h1 id="percent_text">-</h1>
+                <p id="apology_text">-</p>
+            </div>
+        </div>
+
+        <!--feedback buttons-->
+
+        <h2 id="header-3">Did this apology meet your needs?</h2>
+        <div class="container-feedback">
+            <br>
+            <div class="container-feedback">
+                <div id="div-feedback-1">
+                    <button class="button-2" id="get_fb_y" onclick="feedbackGot()">Yes</button>
+                </div>
+                <div id="div-feedback-2">
+                    <button class="button-2" id="get_fb_n" onclick="feedbackGot()">No</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="/static/main.js"></script>
+
+</body>
+</html>

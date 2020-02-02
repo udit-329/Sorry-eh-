@@ -1,6 +1,6 @@
 import JSON_data
 
-link = "C:/Users/ukapo/Desktop/QHACKS/dataAnalytics.json"
+link = "C:\\Users\\patri\\OneDrive\\Desktop\\flask\\dataAnalytics.json"
 data = JSON_data.data_import(link)
 
 def add_data(cat, sub_cat, ss, se, work_or_not):
@@ -11,7 +11,7 @@ def add_data(cat, sub_cat, ss, se, work_or_not):
     if (work_or_not):
         var_data = "ss" + str(ss) + "_se" + str(se)
         data[cat][sub_cat][var_data] += 1
-    
+
     JSON_data.data_export(link, data)
 
 def recommending_engine(cat, sub_cat):#return first, second, third
@@ -27,7 +27,7 @@ def recommending_engine(cat, sub_cat):#return first, second, third
     t4 = f4
 
     a = [t1,t2,t3,t4]
-    
+
     a.sort()
 
     if(f1 == a[3]):

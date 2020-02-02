@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SorryEh?</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <header id=main-header>
+        <div class="container">
+            <h1>SorryEh?</h1>
+        </div>
+    </header>
+
+    <h2 id="header-2">What kind of apology are you looking for?</h2>
+
+    <div class="container-2">
+        <div id="div-2-1">
+            <button class="button" onclick="showButtons(this, ['div-3-1', 'div-3-2'])">Family</button>
+        </div>
+        <div id="div-2-2">
+            <button class="button" onclick="showButtons(this, ['div-3-3', 'div-3-4'])">Significant Other</button>
+        </div>
+        <div id="div-2-3">
+            <button class="button" onclick="showButtons(this, ['div-3-5', 'div-3-6'])">Friend</button>
+        </div>
+        <div id="div-2-4">
+            <button class="button" onclick="showButtons(this, ['div-3-7', 'div-3-8'])">Professional</button>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <!--family-->
+        <div id="div-3-1">
+            <button class="button">To Your Parents</button>
+        </div>
+        <div id="div-3-2">
+            <button class="button">To Your Siblings</button>
+        </div>
+        <!--significant other-->
+        <div id="div-3-3" onclick="showForm('container-5', ['container-4'])">
+            <button class="button">To Your Girlfriend/Wife</button>
+        </div>
+        <div id="div-3-4">
+            <button class="button">To Your Boyfriend/Husband</button>
+        </div>
+        <!--friend-->
+        <div id="div-3-5">
+            <button class="button">To Your Close Friend</button>
+        </div>
+        <div id="div-3-6">
+            <button class="button">To Your Distant Friend</button>
+        </div>
+        <!--professional-->
+        <div id="div-3-7" onclick="showForm('container-4', ['container-5'])">
+            <button class="button">To Your Boss</button>
+        </div>
+        <div id="div-3-8">
+            <button class="button">To Customers</button>
+        </div>
+    </div>
+
+    <div class="container-4">
+        <form id="boss-form" action="/apology" method="POST"  onsubmit="displayApology('boss-form')">
+
+            <!--<div>-->
+                <!--<label>Your Name</label><br>-->
+                <!--<input type="text" id="userName" name="userName" placeholder="Enter Name">-->
+            <!--</div>-->
+            <!--<br>-->
+            <div>
+                <label>Your Boss' Name</label><br>
+                <input type="text" id="username" name="username" placeholder="Mr./Ms. Last Name">
+                <input type="hidden" id="section" name="section" value="professional" readonly>
+                <input type="hidden" id="subsection" name="subsection" value="boss" readonly>
+            </div>
+            <br>
+            <div>
+                <label>Regretable Action</label><br>
+                <input type="text" id="reason" name="reason">
+                <!--<textarea name="regretAction"></textarea>-->
+            </div>
+            <br>
+            <!--<div>-->
+                <!--<label>Company Name</label><br>-->
+                <!--<input type="text" name="companyName">-->
+            <!--</div>-->
+            <br>
+            <input type="submit" name="boss" value="Submit" id="get_ss">
+        </form>
+    </div>
+
+    <div class="container-5">
+        <form id="wife-form" action="/apology" method="POST"  onsubmit="displayApology('wife-form')">
+
+            <div>
+                <label>Your Significant Other</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter First Name">
+                <input type="hidden" id="section" name="section" value="SO" readonly>
+                <input type="hidden" id="subsection" name="subsection" value="gf/w" readonly>
+            </div>
+            <br>
+            <div>
+                <label>Regretable Action</label><br>
+                <input type="text" id="reason" name="reason">
+                <!--<textarea name="regretAction"></textarea>-->
+            </div>
+            <br>
+            <input type="submit" name="wife" value="Submit" id="get_ss">
+        </form>
+    </div>
+
+    <div id=display-text>
+
+    </div>
+    <div style="margin-bottom:75px;"></div>
+
+    <script src="/static/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type=text/javascript>
+      $('#get_ss').click(function() {
+        $('#get_ss').addClass('is-loading');
+        $.ajax({
+          url: '/apology',
+          data: {
+            section : $('#section').val(),
+            subsection : $('#subsection').val(),
+            username : $('#username').val(),
+            reason : $('#reason').val(),
+          },
+          <!--data: $('form').serialize(),-->
+          type: 'POST',
+          success: function(response) {
+            $('#show_ss').html(response);
+            $('#get_ss').hide();
+          }
+        });
+      });
+    </script>
+</body>
+
+</html>
