@@ -1,0 +1,21 @@
+{   
+    "family": {
+        "parents": ["sen 1", "sen 2", "sen 3", "sen 4"],
+        "siblings": ["sen 1", "sen 2", "sen 3", "sen 4"]
+    },
+    
+    "SO": {
+        "gf/w": ["sen 1", "sen 2", "sen 3", "sen 4"],
+        "bf/h": ["sen 1", "sen 2", "sen 3", "sen 4"]
+    },
+
+    "friend": {
+        "close": ["sen 1", "sen 2", "sen 3", "sen 4"],
+        "distant": ["sen 1", "sen 2", "sen 3", "sen 4"]
+    },
+
+    "professional": {
+        "team": ["sen 1", "sen 2", "sen 3", "sen 4"],
+        "customer": ["sen 1", "sen 2", "sen 3", "sen 4"]
+    }
+}

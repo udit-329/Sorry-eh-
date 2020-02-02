@@ -1,0 +1,78 @@
+{
+	"family": {
+		"parents": {
+			"ss1_se1": 22,
+			"ss1_se2": 14,
+			"ss2_se1": 40,
+			"ss2_se2": 33,
+			"count11": 40,
+            "count12": 21,
+            "count21": 45,
+            "count22": 60
+		},
+		"siblings": {
+			"ss1_se1": 63,
+			"ss1_se2": 40,
+			"ss2_se1": 20,
+			"ss2_se2": 67,
+            "count11": 65,
+            "count12": 88,
+            "count21": 99,
+            "count22": 69
+		}
+	},
+	"SO": {
+		"gf/w": {
+			"ss1_se1": 83,
+			"ss1_se2": 75,
+			"ss2_se1": 63,
+			"ss2_se2": 40,
+            "count11": 100,
+            "count12": 100,
+            "count21": 100,
+            "count22": 100
+		},
+		"bf/h": {
+			"ss1_se1": 43,
+			"ss1_se2": 50,
+			"ss2_se1": 65,
+			"ss2_se2": 4,
+            "count11": 50,
+            "count12": 100,
+            "count21": 85,
+            "count22": 20
+		}
+	},
+	"friend": {
+		"ss1_se1": 20,
+		"ss1_se2": 40,
+        "ss2_se1": 50,
+		"ss2_se2": 70,
+        "count11": 30,
+        "count12": 80,
+        "count21": 80,
+        "count22": 100
+	},
+	"professional": {
+		"boss": {
+			"ss1_se1": 94,
+			"ss1_se2": 64,
+			"ss2_se1": 50,
+			"ss2_se2": 25,
+            "count11": 100,
+            "count12": 100,
+            "count21": 100,
+            "count22": 100
+		},
+		"customer": {
+			"ss1_se1": 44,
+			"ss1_se2": 33,
+			"ss2_se1": 22,
+			"ss2_se2": 11,
+			"count11": 60,
+            "count12": 50,
+            "count21": 40,
+            "count22": 30
+		}
+	}
+}
