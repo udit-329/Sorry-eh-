@@ -1,21 +1,21 @@
 {   
     "family": {
-        "parents": ["sen 1", "sen 2", "sen 3", "sen 4"],
-        "siblings": ["sen 1", "sen 2", "sen 3", "sen 4"]
+        "parents": ["I am so sorry for ", "I'm sincerely sorry for ", "Please forgive me.", "I hope you can forgive me."],
+        "siblings": ["I am so sorry for ", "I'm sincerely sorry for ", "Please forgive me.", "I hope you can forgive me."]
     },
     
     "SO": {
-        "gf/w": ["sen 1", "sen 2", "sen 3", "sen 4"],
-        "bf/h": ["sen 1", "sen 2", "sen 3", "sen 4"]
+        "gf/w": ["Words will never express how sorry I am. ", "I sincerely apologize for what I did. ", "Please call me when you get a chance so we can talk more.", "I'm hoping we can move past this."],
+        "bf/h": ["Words will never express how sorry I am. ", "I sincerely apologize for what I did. ", "Please call me when you get a chance so we can talk more.", "I'm hoping we can move past this."]
     },
 
     "friend": {
-        "close": ["sen 1", "sen 2", "sen 3", "sen 4"],
-        "distant": ["sen 1", "sen 2", "sen 3", "sen 4"]
+        "close": ["I am so sorry for ", "I'm sincerely sorry for ", "Please forgive me.", "I hope you can forgive me."],
+        "distant": ["I am so sorry for ", "I'm sincerely sorry for ", "Please forgive me.", "I hope you can forgive me."]
     },
 
     "professional": {
-        "team": ["sen 1", "sen 2", "sen 3", "sen 4"],
-        "customer": ["sen 1", "sen 2", "sen 3", "sen 4"]
+        "boss": ["I would like to express my deep regret for ", "please accept my sincere apology for ", "I value our professional relationship and firmly believe we can keep working together effectively.", "I take full responsibility for my actions and it is important that you trust me to fulfill my role, so I offer to make up for it in any way you see fit."],
+        "customer": ["I am so sorry for ", "I'm sincerely sorry for ", "Please forgive me.", "I hope you can forgive me."]
     }
 }
