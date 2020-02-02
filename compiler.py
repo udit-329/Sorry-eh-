@@ -12,12 +12,12 @@ def get_sentences(cat, sub_cat, ss, se):
     return sen1, sen2
 
 def create_apology(cat, sub_cat, ss, se, name, reason):
-
-    sen1, sen2 = get_sentences(cat, sub_cat, ss, se)
-
-    gen_part = generic[cat]
     
-    apology = name + sen1 +gen_part + reason + sen2
-
-
+    sen1, sen2 = get_sentences(cat, sub_cat, ss, se)
+    gen_part = generic[cat]
+    if(cat == "SO"):
+        apology = name + ", " + sen1 + gen_part + reason + ". " + sen2
+    else:
+        apology = name + ", " + sen1 + reason + ". " + gen_part + sen2
+        
     return apology
