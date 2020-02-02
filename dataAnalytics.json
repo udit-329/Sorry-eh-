@@ -24,9 +24,9 @@
 	"SO": {
 		"gf/w": {
 			"ss1_se1": 83,
-			"ss1_se2": 75,
-			"ss2_se1": 63,
-			"ss2_se2": 40,
+			"ss1_se2": 63,
+			"ss2_se1": 40,
+			"ss2_se2": 75,
             "count11": 100,
             "count12": 100,
             "count21": 100,
@@ -55,10 +55,10 @@
 	},
 	"professional": {
 		"boss": {
-			"ss1_se1": 94,
-			"ss1_se2": 64,
+			"ss1_se1": 73,
+			"ss1_se2": 66,
 			"ss2_se1": 50,
-			"ss2_se2": 25,
+			"ss2_se2": 94,
             "count11": 100,
             "count12": 100,
             "count21": 100,
